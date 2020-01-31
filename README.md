@@ -9,10 +9,20 @@ Through this you can get weather data on your command line interface, commands l
 
 
 > weather today --location Mumbai
+
+
 > weather today -l Mumbai
+
+
 > weather forecast --location Mumbai
+
+
 > weather forecast -l Mumbai
+
+
 > weather version
+
+
 > weather help
 
 These commands will work and show you the weather data.
