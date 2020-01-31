@@ -12,11 +12,19 @@ const input = minimist(o_input);
 // console.log(input)
 //var loc = undefined;
 const cmd = input._[0];
-var loc = input.location || input.l+" "+input._[1] || o_input.slice(1).join(" ") || undefined ;
+if (input._[1]==undefined ){
+    var loc = input.location || input.l || o_input.slice(1).join(" ") || undefined ;
+}
+else{
+    if(input.l==undefined){
+var loc =   input.location+" "+input._[1] || o_input.slice(1).join(" ") || undefined ;
 // // var loc = input[1];
-
-// console.log(input);
-// console.log("location from user "+loc );
+}
+else{
+   var loc =  input.l+" "+input._[1] || o_input.slice(1).join(" ") || undefined ;
+}}
+console.log(input);
+console.log("location from user "+loc );
 
 
 if(cmd == 'today'){
