@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const help = require('./commands/help');
 const version = require('./commands/version');
 const today = require('./commands/today');
@@ -15,6 +17,8 @@ const cmd = input._[0];
 if (input._[1]==undefined ){
     var loc = input.location || input.l || o_input.slice(1).join(" ") || undefined ;
 }
+
+
 else{
     if(input.l==undefined){
 var loc =   input.location+" "+input._[1] || o_input.slice(1).join(" ") || undefined ;
@@ -23,8 +27,8 @@ var loc =   input.location+" "+input._[1] || o_input.slice(1).join(" ") || undef
 else{
    var loc =  input.l+" "+input._[1] || o_input.slice(1).join(" ") || undefined ;
 }}
-console.log(input);
-console.log("location from user "+loc );
+// console.log(input);
+// console.log("location from user "+loc );
 
 
 if(cmd == 'today'){
