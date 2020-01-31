@@ -3,7 +3,11 @@ A weather command line application made using nodeJS.
 
 Through this you can get weather data on your command line interface, commands like,
 > weather today
+
+
 > weather forecast
+
+
 > weather today --location Mumbai
 > weather today -l Mumbai
 > weather forecast --location Mumbai
