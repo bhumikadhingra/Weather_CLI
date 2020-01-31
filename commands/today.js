@@ -3,7 +3,7 @@ const getraw = require("../utilities/getRawWeather");
 
 const chalk = require("chalk");
 const ora = require("ora");
-const spinner = ora('Loading weather');
+const spinner = ora(chalk.greenBright('Loading weather'));
 // console.log("Utilities acquired");
 module.exports = async function (location){
     // console.log("Pointer in today's function");
@@ -27,7 +27,7 @@ module.exports = async function (location){
         const cond = todayweather.weather_state_name;
         spinner.stop();
   console.log(chalk.cyanBright(`    Today's weather in ${location}
-           ${cond}    ${temp}
+           ${cond}    ${temp}°
   `));
 }
 catch(err){

@@ -4,7 +4,7 @@ const getLoc = require("./../utilities/getLocation");
 const axios = require("axios");
 const chalk = require("chalk");
 const ora = require("ora");
-const spinner = ora('Loading weather');
+const spinner = ora(chalk.greenBright('Loading weather'));
 
 module.exports = async function (location){
     // console.log("Pointer in today's function");

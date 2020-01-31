@@ -1,0 +1,22 @@
+{
+  "name": "Lec_3",
+  "version": "1.0.0",
+  "main": "axios.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "chalk": "^3.0.0",
+    "minimist": "^1.2.0",
+    "ora": "^4.0.3"
+  },
+  "bin": {
+    "weather": "main.js"
+  },
+  "devDependencies": {},
+  "description": ""
+}
